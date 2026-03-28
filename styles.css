@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000000;
+  font-family: 'Inter', sans-serif;
+  color: #e0e0e0;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid #1a1a1a;
+  padding-bottom: 3rem;
+}
+
+.badge {
+  display: inline-block;
+  background: #0a0a0a;
+  padding: 0.4rem 1rem;
+  border-radius: 40px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #ff4444;
+  border: 1px solid #2a2a2a;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+.title-accent {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.description {
+  max-width: 700px;
+  margin: 0 auto 1.8rem;
+  font-size: 1.1rem;
+  color: #a0a0a0;
+  font-weight: 400;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #888;
+  background: #0a0a0a;
+  padding: 0.75rem 1.5rem;
+  border-radius: 60px;
+  width: fit-content;
+  margin: 0 auto;
+  border: 1px solid #1a1a1a;
+}
+
+/* Общие стили секций */
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.section-title h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.title-icon {
+  color: #ff4444;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+/* about */
+.about {
+  margin-bottom: 4rem;
+}
+
+.about-card {
+  background: #050505;
+  border: 1px solid #1a1a1a;
+  border-radius: 24px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.about-card p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #c0c0c0;
+}
+
+.about-card strong {
+  color: #ff5555;
+  font-weight: 700;
+}
+
+.signature {
+  margin-top: 1.2rem;
+  text-align: right;
+  font-style: italic;
+  color: #666;
+  border-top: 1px dashed #1a1a1a;
+  padding-top: 1rem;
+}
+
+/* prices */
+.prices {
+  margin-bottom: 3rem;
+}
+
+.price-category {
+  background: #000000;
+  border-radius: 24px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid #1a1a1a;
+  transition: transform 0.2s;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+  border-left: 3px solid #ff4444;
+  padding-left: 1rem;
+}
+
+.category-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.cat-badge {
+  font-size: 1.8rem;
+}
+
+.price-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.price-card {
+  background: #080808;
+  border-radius: 16px;
+  padding: 1rem 1rem;
+  text-align: center;
+  transition: all 0.2s;
+  border: 1px solid #1a1a1a;
+}
+
+.price-card:hover {
+  border-color: #ff4444;
+  transform: translateY(-2px);
+  background: #0a0a0a;
+}
+
+.service-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  color: #b0b0b0;
+}
+
+.price-value {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #ff5555;
+  letter-spacing: -1px;
+  margin: 0.25rem 0;
+}
+
+.service-note {
+  font-size: 0.7rem;
+  color: #666;
+  margin-top: 0.4rem;
+}
+
+.compact .price-card {
+  background: #080808;
+}
+
+.price-card.special .price-value {
+  color: #ff7777;
+}
+
+/* предупреждение */
+.payment-warning {
+  display: flex;
+  gap: 1rem;
+  background: #030303;
+  border-radius: 20px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-left: 4px solid #ff4444;
+  border: 1px solid #1a1a1a;
+}
+
+.warning-icon {
+  font-size: 2rem;
+}
+
+.warning-text {
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: #b0b0b0;
+}
+
+.warning-text strong {
+  color: #ff6666;
+}
+
+/* contact */
+.contact {
+  margin: 3rem 0 2rem;
+}
+
+.contact-card {
+  background: #050505;
+  border-radius: 24px;
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid #1a1a1a;
+  margin-bottom: 1.5rem;
+}
+
+.contact-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.contact-emoji {
+  font-size: 1.2rem;
+}
+
+.contact-link {
+  font-size: 2.2rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.2s;
+  display: inline-block;
+  margin: 0.5rem 0;
+}
+
+.contact-link:hover {
+  color: #ff6666;
+}
+
+.contact-note {
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.copy-btn {
+  background: #0a0a0a;
+  border: 1px solid #2a2a2a;
+  color: #ccc;
+  padding: 0.7rem 1.5rem;
+  border-radius: 40px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+}
+
+.copy-btn:hover {
+  background: #111;
+  border-color: #ff5555;
+  color: #ffaaaa;
+}
+
+/* кнопка создатель */
+.creator-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.creator-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #000000;
+  border: 1px solid #2a2a2a;
+  padding: 0.9rem 2rem;
+  border-radius: 60px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 600;
+  transition: 0.2s;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.creator-btn:hover {
+  background: #080808;
+  border-color: #ff6666;
+  color: #ffaaaa;
+  transform: scale(1.02);
+}
+
+.creator-icon {
+  font-size: 1.1rem;
+}
+
+/* footer */
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.7rem;
+  color: #3a3a3a;
+  border-top: 1px solid #111;
+  padding-top: 2rem;
+}
+
+/* responsive */
+@media (max-width: 780px) {
+  .container {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 2.8rem;
+  }
+  .hero-stats {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    border-radius: 28px;
+  }
+  .price-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact-link {
+    font-size: 1.6rem;
+  }
+  .section-title h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .price-grid {
+    grid-template-columns: 1fr;
+  }
+  .payment-warning {
+    flex-direction: column;
+    text-align: center;
+  }
+}
